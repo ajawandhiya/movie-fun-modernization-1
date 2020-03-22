@@ -14,7 +14,7 @@ plugins {
 apply from: "../db.gradle"
 
 flyway {
-    url = "jdbc:mysql://localhost:3306/albums?useSSL=false"
+    url = "jdbc:mysql://localhost:3306/albums?useSSL=false&serverTimezone=UTC"
     user = "root"
     outOfOrder = false
 }
