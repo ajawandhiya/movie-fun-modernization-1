@@ -18,6 +18,6 @@ logging.level:
   org.superbiz.moviefun: DEBUG
 
 s3:
-  accessKey: AKIAIAGXPK5AY656NRJQ
-  secretKey: <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
-  bucketName: cognizant-pal-bucket
+  accessKey:
+  secretKey:
+  bucketName:
