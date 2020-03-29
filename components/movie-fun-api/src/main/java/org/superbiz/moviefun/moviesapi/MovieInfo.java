@@ -73,12 +73,12 @@ public class MovieInfo {
     @Override
     public String toString() {
         return "MovieInfo{" +
-            "id=" + id +
-            ", director='" + director + '\'' +
-            ", title='" + title + '\'' +
-            ", year=" + year +
-            ", genre='" + genre + '\'' +
-            ", rating=" + rating +
-            '}';
+                "id=" + id +
+                ", director='" + director + '\'' +
+                ", title='" + title + '\'' +
+                ", year=" + year +
+                ", genre='" + genre + '\'' +
+                ", rating=" + rating +
+                '}';
     }
 }

@@ -1,32 +1,36 @@
 ---
+memory: 1G
+instances: 1
 applications:
 - name: album-service
+  env:
+    GRANT_TYPE: client_credentials
   path: applications/album-service/build/libs/album-service-1.1.0-SNAPSHOT.jar
   routes:
-    - route: album-service-vinay-madugula7.cfapps.io
+    - route: album-service-vmadugulak7.cfapps.io
   services:
-  - album-database
-  - photo-storage
-  - movie-fun-sso
+    - album-database
+    - photo-storage
+    - movie-fun-sso
+- name: movie-service
   env:
     GRANT_TYPE: client_credentials
-- name: movie-service
   path: applications/movie-service/build/libs/movie-service-1.1.0-SNAPSHOT.jar
   routes:
-    - route: movie-service-vinay-madugula7.cfapps.io
+    - route: movie-service-vmadugulak7.cfapps.io
   services:
-  - movie-database
-  - movie-fun-sso
-  env:
-    GRANT_TYPE: client_credentials
+    - movie-database
+    - movie-fun-sso
 - name: movie-fun-app
   path: applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war
   routes:
-    - route: movie-fun-app-vinay-madugula7.cfapps.io
+    - route: movie-fun-app-vmadugulak7.cfapps.io
   services:
-  - photo-storage
-  - movie-fun-sso
+    - photo-storage
+    - movie-fun-sso
   env:
-    ALBUMS_URL: http://album-service-vinay-madugula7.cfapps.io/albums
-    MOVIES_URL: http://movie-service-vinay-madugula7.cfapps.io/movies
+    ALBUMS_URL: http://album-service-vmadugulak7.cfapps.io/albums
+    MOVIES_URL: http://movie-service-vmadugulak7.cfapps.io/movies
     GRANT_TYPE: authorization_code
+
+

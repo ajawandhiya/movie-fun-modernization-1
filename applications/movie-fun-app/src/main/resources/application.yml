@@ -1,3 +1,5 @@
+server.port: 8080
+
 spring:
   mvc.view:
     prefix: /WEB-INF/
@@ -13,6 +15,6 @@ s3:
   bucketName: <name of the bucket>
 
 albums:
-  url: http://localhost:8081/albums
+  url: http://localhost:8085/albums
 movies:
-  url: http://localhost:8082/movies
+  url: http://localhost:8086/movies
